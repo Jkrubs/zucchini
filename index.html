@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zucchini food market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    
+        <div class="logo">
+            <i onclick="showMenu()" class="fa-solid fa-bars"></i>
+            <img src="images/zucc.png" alt="">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="search">
+            <button>Search</button>
+
+        </div>
+
+        <div class="icons">
+            <i id="unique" class="fa-regular fa-heart"><span>0</span></i>
+            <i class="fa-regular fa-user"></i>
+            <i id="unique" class="fa-solid fa-bag-shopping"><span>0</span></i>
+        </div>
+
+        <div id="menu" class="menu">
+            <div class="title">
+                <h2>Menu</h2>
+                <i onclick="hideMenu()" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Fruits</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Fresh Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Vegetables</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Onions + Vegetables</a></li>
+                        <li><a href="#">Fresh Vegetables</a></li>
+                        <li><a href="#">Root Vegetabes</a></li>
+                        <li><a href="#">Herbs</a></li>
+                        <li><a href="#">Pre-packed Vegetables</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Dairy</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Milk</a></li>
+                        <li><a href="#">Eggs</a></li>
+                        <li><a href="#">Butter + Cheese</a></li>
+                        <li><a href="#">Plant Based Milk</a></li>
+                        <li><a href="#">Yoghurts</a></li>
+                        <li><a href="#">Cooking Cream</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Bakery</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Bread, Rolls & Buns</a></li>
+                        <li><a href="#">Pastries</a></li>
+                        <li><a href="#">Muffins</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Doughnuts</a></li>
+                        <li><a href="#">Cake Loaves</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Beverages</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Water</a></li>
+                        <li><a href="#">Juices & smoothies</a></li>
+                        <li><a href="#">Flavored Drinks</a></li>
+                        <li><a href="#">Ready to Drink Juices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Pantry</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Rice, Pasta & Pulses</a></li>
+                        <li><a href="#">Canned Foods</a></li>
+                        <li><a href="#">Cooking Oils</a></li>
+                        <li><a href="#">Condiments - Spices</a></li>
+                        <li><a href="#">Sauces & Dips</a></li>
+                        <li><a href="#">Sweets, Snacks & Nuts</a></li>
+                        <li><a href="#">Tea & Coffee</a></li>
+                        <li><a href="#">Cereals</a></li>
+                        <li><a href="#">Spreads</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Frozen Foods</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Ready To Consume</a></li>
+                        <li><a href="#">Frozen Vegetables</a></li>
+                        <li><a href="#">Frozen Meat & Meaty Products</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Home & Garden</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Household Cleaning Products</a></li>
+                        <li><a href="#">Garden</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="commodity">
+                <div class="main"><a href="#">Zucchini Deli</a></div>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Breakfast Classics</a></li>
+                        <li><a href="#">Bitings</a></li>
+                        <li><a href="#">Burgers</a></li>
+                        <li><a href="#">Wraps, Sandwiches And Pita</a></li>
+                        <li><a href="#">Pizzas</a></li>
+                        <li><a href="#">Salads</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="ad"><div class="box">
+    <i class="fa-solid fa-truck"></i>
+    <div>
+        <h5>Delivery</h5>
+        <h6>Same Day Delivery</h6>
+    </div>
+</div>
+    <div class="box">
+        <i class="fa-solid fa-bullhorn"></i>
+        <div>
+            <h5>Daily Promotions</h5>
+            <h6>Everyday Low Prices</h6>
+        </div>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <div>
+            <h5>Open Everyday</h5>
+            <h6>Order Anytime Everyday</h6>
+        </div>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-dollar-sign"></i>
+        <div>
+            <h5>Payment</h5>
+            <h6>Easy Payment options</h6>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+    <a href="" class="category">
+        <div class="tile">
+            <img src="images/fruits.jpeg" alt="">
+            <h5>Fruits</h5>
+        </div>
+    </a>
+
+    <a href="" class="category">
+        <div class="tile">
+            <img src="images/vegetables.jpeg" alt="">
+            <h5>Vegetabes</h5>
+        </div>
+    </a>
+
+    <a href="" class="category">
+        <div class="tile">
+            <img src="images/bakery.jpeg" alt="">
+            <h5>Bakery</h5>
+        </div>
+    </a>
+
+    <a href="" class="category">
+        <div class="tile">
+            <img src="images/dairy.jpeg" alt="">
+            <h5>Dairy</h5>
+        </div>
+    </a>
+
+    <a href="" class="category">
+        <div class="tile">
+            <img src="images/pantry.jpeg" alt="">
+            <h5>Pantry</h5>
+        </div>
+    </a>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
